@@ -1,0 +1,8 @@
+<%= form_with model: task do |f| %>
+<ul>
+  <li><%= f.label :title %> <%= f.text_field :title %></li>
+  <li><%= f.label :details %> <%= f.text_field :details %> </li>
+  <li><%= f.label :completed %> <%= f.check_box  :completed %> </li>
+  <li><%= f.submit %> </li>
+</ul>
+<% end %>
